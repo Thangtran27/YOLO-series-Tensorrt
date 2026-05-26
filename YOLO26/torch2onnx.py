@@ -83,7 +83,6 @@ class YOLO26AddNMS(nn.Module):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str, default='./weights/best.pt', help='weights path')
-    # parser.add_argument('--cfg', type=str, default='cfg/yolor_csp_x.cfg', help='config path')
     parser.add_argument('--output', type=str, default='weights/best.onnx', help='output ONNX model path')
     parser.add_argument('--max_size', type=int, default=640, help='max size of input image')
     opt = parser.parse_args()
